@@ -1,0 +1,223 @@
+*{
+  font-family: system-ui;
+}
+.card-funcionamento {
+  font-size: 20px;
+  width: 400px; 
+  height:auto;
+  background-color: #FFFFFF;
+  filter: drop-shadow(1px 1px 4px #d8d9da);
+  margin:10px;
+  padding-top: 20px;
+  padding-left: 30px;padding-right: 30px;
+}
+/*.card-funcionamento
+width: 20%; 
+  height: 16.5rem;
+*/
+
+.logo-empresa {
+  padding: 20px;
+}
+
+/*CONTEUDO DIFERENCIAL MOVIDO P/ GLOBAL.CSS*/
+
+/*LISTA PERSONALIZADA MOVIDA PARA GLOBAL.CSS*/
+
+.simular-comissao {
+  background-color: #344451;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.simular-comissao .cabecalho {
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+
+.simular-comissao .titulo{
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+.simular-comissao .descricao{
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.simulacao-container{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.card-simulacao {
+  background-color: #212933;
+  width: 22rem;
+  height: 15rem;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin:15px;
+
+  display: grid;
+  align-content: space-evenly;
+}
+
+.card-simulacao .incremento {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-incremento {
+  text-decoration: none;
+  color: black;
+
+  background-color: white;
+  border: none;
+  cursor: pointer;
+
+  font-size: 25px;
+}
+
+.btn-plus {
+  text-decoration: none;
+  color: black;
+
+  background-color: white;
+  border: none;
+  cursor: pointer;
+
+  font-size: 25px;
+  width: fit-content;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+input {
+  font-size: 20px;
+}
+
+.card-plano123 {
+  background-color: white;
+  width: 22rem;
+  height: 15rem;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin:15px;
+
+  display: grid;
+  align-content: space-evenly;
+}
+.card-plano123 p {
+  color: #334551;
+}
+.card-plano123 option{
+  color: #8F4FFB;
+  font-size: 25px;
+}
+
+
+.collapsible {
+  background-color: #FFF;
+  color: #334551;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.active, .collapsible:hover {
+  background-color: #ebebeb;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+
+.perguntas {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.perguntas-container .titulo {
+  font-size: 35px;
+  color: #334551;
+}
+
+.simular-comissao .simulacao-container{
+  flex-wrap: wrap;
+}
+
+.header-container,
+.apresentacao,
+.funcionamento-container,
+.conteudo-diferencial,
+.lista-personalizada,
+.simular-comissao,
+.perguntas-container,
+.rodape {
+  padding-left: 6.2rem;
+  padding-right: 6.2rem;
+}
+@media screen and (max-width: 768px) {
+  .header-container,
+  .apresentacao,
+  .funcionamento-container,
+  .conteudo-diferencial,
+  .lista-personalizada,
+  .simular-comissao,
+  .perguntas-container,
+  .rodape {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .apresentacao{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .apresentacao img{
+    width: 25rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .conteudo-diferencial{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conteudo-diferencial .card-2 {
+    width: auto;
+  }
+  .conteudo-diferencial img {
+    width: 25rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .simular-comissao .cabecalho{
+    padding: 0 5% 0 5%;
+  }
+
+
+}
+
+

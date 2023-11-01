@@ -1,0 +1,181 @@
+html, body {
+  overflow-x: hidden;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  flex-wrap: wrap;
+  /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  */display: block;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin-left: 0px; margin-right: 0px;
+  display: block;
+  position: relative;
+  justify-content: center;
+  
+}
+
+/* NAVBAR */
+.header-container {
+  margin-top: 1.55rem;
+  /*background-color: ghostwhite;*/
+}
+
+.header {
+  
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.links {
+  margin: auto 0;
+}
+
+.links a:not(:last-child) {
+  text-decoration: none;
+  color: #30404D;
+  margin-right: 25px;
+}
+
+.links .seja-afiliado {
+  text-decoration: none;
+  color: #8B56F7;
+
+  background-color: white;
+  
+  border: 1px solid #8B56F7;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+.links a.seja-afiliado:hover{
+  background-color: #8B56F7;
+  color: white;
+}
+/*responsividade navbar*/
+
+
+
+.header .icon { /*esconde o hamburger*/
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+    position: relative;
+  }
+  .links a{display: none;}
+  .header a.icon {
+    float: right;
+    display: block;
+    margin: auto 0 auto 0;
+    
+    position: absolute;
+    left: auto;
+    right: 0;
+    margin-top: 7.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links.responsive {
+    position: relative;
+    padding-right: 40px;
+    background-color: ghostwhite;
+    padding-left: 20px;
+  }
+
+  .header.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin: 20px 0 20px 0;
+  }
+}
+
+
+/* FIM DA NAVBAR */
+
+/*apresentacao*/
+
+.apresentacao {
+  display:flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+
+.card-apresentacao {
+  text-align: center;
+  display: inline-block;
+  width: 40rem;
+}
+
+.background-banner {
+  background-color: #d4cedf; /*Remover cor ao terminar*/
+  position: relative;
+}
+/*PARTE 1 - FIM*/
+
+.btn-verde {
+  text-decoration: none;
+  color: whitesmoke;
+
+  background-color: #00CF89;
+  box-shadow: inset 0 0 1px 1px rgb(135, 231, 116);
+  border: none;
+  border-radius: 5px;
+  padding: 16px 40px;
+  cursor: pointer;
+
+  font-size: 20px;
+}
+
+.lista-personalizada {
+  color:white;
+  background-color: #8F4FFB;
+  text-align: left;
+}
+.lista-personalizada .lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.lista-personalizada .lista p{
+  padding-left: 25px;
+  font-size: 18px;
+  padding-bottom: 1px;
+  background: url(../assets/img/eumei-list-style.png) no-repeat;
+}
+
+.conteudo-diferencial {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 1.55rem 0 1.55rem 0;
+  vertical-align: middle;
+}
+
+.conteudo-diferencial .card-2 {
+  text-align: left;
+  width: 50%;
+}
+
+.conteudo-diferencial .card-2 .titulo {
+  font-size: 25px;
+  color:#334551;font-size: 40px;
+}
+
+.conteudo-diferencial .card-2 .descricao {
+  /*line-height: 30px;*/
+  color:#334551;font-size: 20px;
+}
