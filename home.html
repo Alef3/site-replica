@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/scroll-container.css">
   <title>TESTE FRONTEND</title>
+  <style>
+
+  </style>
 </head>
 <body>
   <div class="header-container">
@@ -22,11 +25,9 @@
         <a class="seja-afiliado" href="#afiliado">Seja um afiliado</a>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="toggleResponsividade()">
-        <div>
           <div style="background-color: #8B56F7; width: 21px; height: 3px;margin: 4px;"></div>
           <div style="background-color: #8B56F7; width: 21px; height: 3px;margin: 4px;"></div>
           <div style="background-color: #8B56F7; width: 21px; height: 3px;margin: 4px;"></div>
-        </div>
       </a>
     </div>
   </div>
@@ -44,36 +45,34 @@
 
   <div class="banner-video">
     <iframe class="yt-video" width="1120" height="630" src="https://www.youtube.com/embed/lJIrF4YjHfQ?si=p7wggZsiEZ1cN3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <p style="color: whitesmoke; font-size: 20px; font-style:normal ;">O diferencial que nosso serviço oferece</p>
+      <p style="color: whitesmoke; font-size: 25px; font-style:none ;">O diferencial que nosso serviço oferece</p>
       
-      <div class="lista-personalizada">
-        <section class="lista">
-          <div>
-            <p>Layout One Page</p>
-            <p>Registro de domínio</p>
-            <p>Hospedagem do Site Otimizada</p>
-            <p>Seu negócio no Gooogle</p>
-          </div>
-          <div>
-            <p>Hospedagem para E-mail (5 contas)</p>
-            <p>E-mails Personalizados</p>
-            <p>Pronto para celulares, Tablets e PCs</p>
-            <p>Estatísticas de acesso por e-mail</p>
-          </div>
-          <div>
-            <p>Otimizações para Google(SEO)</p>
-            <p>Recebimento de Contatos do Site no Celular</p>
-            <p>CDN incluído</p>
-            <p>Link das Redes Sociais</p>
-          </div>
-          <div>
-            <p>Certificado SSL</p>
-            <p>UX de alta conversão</p>
-            <p>Estatísticas de acessos</p>
-            <p>Segurança: dados seguros</p>
-          </div>
-        </section>
-      </div>
+      <section class="lista" id="l-responsiva">
+        <div>
+          <p>Layout One Page</p>
+          <p>Registro de domínio</p>
+          <p>Hospedagem do Site Otimizada</p>
+          <p>Seu negócio no Gooogle</p>
+        </div>
+        <div>
+          <p>Hospedagem para E-mail (5 contas)</p>
+          <p>E-mails Personalizados</p>
+          <p>Pronto para celulares, Tablets e PCs</p>
+          <p>Estatísticas de acesso por e-mail</p>
+        </div>
+        <div>
+          <p>Otimizações para Google(SEO)</p>
+          <p>Recebimento de Contatos do Site no Celular</p>
+          <p>CDN incluído</p>
+          <p>Link das Redes Sociais</p>
+        </div>
+        <div>
+          <p>Certificado SSL</p>
+          <p>UX de alta conversão</p>
+          <p>Estatísticas de acessos</p>
+          <p>Segurança: dados seguros</p>
+        </div>
+      </section>
 
   </div>
   <div class="como-funciona">
@@ -94,12 +93,12 @@
     </ol>
   </div>
 
-  <div class="conteudo-diferencial">
-    <div class="card-2">
+  <div class="conteudo-diferencial" id="cd-responsivo">
+    <div class="card-2" id="c2-responsivo">
       <p class="titulo">Venda mais com <strong>um site poderoso</strong></p>
       <p class="descricao">Criado para aumentar o aumento das levantadas de mão do seu site.
         apresente seu serviço de forma agradável e comece a vender.</p>
-      <ul class="descricao">
+      <ul>
         <li>Elementos visuais para chamar atenção</li>
         <li>One-Page de fácil interação</li>
         <li>Experiência de navegação agradável</li>
@@ -109,12 +108,14 @@
       </ul>
       <button class="btn-verde">Seja um parceiro gratuitamente</button>
     </div>
-    <img src="./assets/img/modelo-img.png" alt="" style="height: inherit; padding-top: 15px;">
+    
+    <img src="./assets/img/modelo-img.png" id="show-img" alt="" style="height: inherit; padding-top: 15px;">
+
   </div>
 
-  <div class="conteudo-diferencial">
-    <img src="./assets/img/modelo-img.png" alt="" style="height: inherit; padding-top: 15px;">
-    <div class="card-2">
+  <div class="conteudo-diferencial" id="cd-responsivo">
+    <img src="./assets/img/modelo-img.png" alt="" style="height: inherit; padding-top: 15px; padding-bottom: 20px;">
+    <div class="card-2"  id="c2-responsivo">
       <p class="titulo">Economize tempo e <strong>ganhe dinheiro</strong></p>
       <p class="descricao">Não perca tempo e dinheiro contratando agências de desenvolvimento. Tenha um site
         de forma simples e rápida, <strong>seja um parceiro.</strong></p>
@@ -133,8 +134,8 @@
   
   <div class="container-planos">
     <p class="texto-selecione">Selecione o plano compativel com a sua empresa:</p>
-    <div class="container-cards">
-      <section class="card-com-lista" style="width: fit-content;">
+    <div class="container-cards" id="container-cards-responsivo">
+      <section style="width: fit-content;">
         <div class="card-planos">
           <p class="titulo-plano">Plano 1</p>
           <p class="plano-valor">R$ 500,00</p>
@@ -160,7 +161,7 @@
         </div>
 
       </section>
-      <section class="card-com-lista" style="width: fit-content;">
+      <section style="width: fit-content;">
         <div class="card-planos">
           <p class="titulo-plano">Plano 2</p>
           <p class="plano-valor">R$ 1.500,00</p>
@@ -188,7 +189,7 @@
         </div>
       </section>
       
-      <section class="card-com-lista" style="width: fit-content;">
+      <section style="width: fit-content;">
         <div class="card-planos">
           <p class="titulo-plano">Plano 3</p>
           <p class="plano-valor">R$ 2.500,00</p>
@@ -216,19 +217,19 @@
           </ul>
         </div>
       </section>
-
     </div>
-
-  </div>
-  <div class="border-garantia">
-    <img src="./assets/img/garantia.png">
-    <div class="frase-garantia" style="display: block; width: 100%;">
-      <p style="text-align: center; color: whitesmoke;">Se você é nosso cliente e não ficou satisfeito em um período de 30 dias,
-        nós devolveremos o seu dinheiro.
-      </p>
+    
+    <div class="border-garantia">
+      <img src="./assets/img/garantia.png">
+      <div class="frase-garantia" style="display: block; width: 100%;">
+        <p style="color: whitesmoke;">Se você é nosso cliente e não ficou satisfeito em um período de 30 dias,
+          nós devolveremos o seu dinheiro.
+        </p>
+      </div>
+  
     </div>
-
   </div>
+  
   <div class="rodape" style="width: 100%; text-align: center;">
     <p style="font-weight: bold; font-size: 25px; color: #3D4752;">Restaram dúvidas?</p>
     <p>Entre em contato para que possamos lhe ajudar</p>

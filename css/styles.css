@@ -1,12 +1,4 @@
 
-@media only screen and (max-device-width: 768px) {
-  .container-planos .container-cards {
-    flex-wrap: wrap;
-  }
-  
-  
-}
-
 /*PARTE 1*/
 .apresentacao {
   justify-content: space-between;
@@ -17,11 +9,10 @@
   position: relative;
   height: 320px;
   margin-bottom: 10rem;
+  .banner-opacity {
+    opacity: 0.15;
+  }
 
-}
-
-.apresentacao .banner-opacity {
-  opacity: 0.15;
 }
 
 .card-apresentacao {
@@ -54,11 +45,17 @@
   display: block;
   z-index: 1;
   background-color: #8F4FFB;
+  padding-bottom: 25px;
 }
 
 .yt-video {
-  margin-top: -130px;
-  /*margin-top: -6.2em;*/
+  margin-top: -170px;
+  width: 1120px;
+  height: 630px;
+}
+
+.lista {
+  color: white;
 }
 
 /*lista*/
@@ -69,38 +66,31 @@
 .como-funciona {
   margin-left: 70px;
   margin-right: 70px;
+  
+  ol > li::marker {
+    font-weight: bold;
+    display: block;
+  }
+  
 }
-
-.como-funciona p {
+.como-funciona   p{
   text-align: center;
 }
 
-.como-funciona ol > li::marker {
-  font-weight: bold;
-  display: block;
-}
-
 .list-custom {
-  display: inline-flex;
+  display: flex;
   list-style: none;
+  img {
+    padding-right: 40px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .numerada-com-imagem {
-  display: inherit;
+  display: inline-flex;
+  padding-bottom: 20px;
 }
-
-.list-custom img {
-  padding-right: 40px;
-  width: 50px;
-  height: 50px;
-}
-
-/*.list-custom li:before {
-  content: counter(item) ". ";
-  counter-increment: item;
-  font-weight: bold;
-
-}*/
 
 /* FIM DA PARTE 3 - COMO FUNCIONA */
 
@@ -109,19 +99,30 @@
 /* PARTE 5 - PLANOS */
 
 .container-planos {
-  display: block;
+  display: grid;
   background-color: #8F4FFB;
+  position: relative;
   
-  width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 0;
+  justify-items: center;
+  margin-bottom: 7.5rem;
+
+  .texto-selecione {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  
+  }
 }
 
-.container-planos .texto-selecione {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 15px;
-  color: whitesmoke;
-}
 
 .container-planos .card-planos .titulo-plano, .plano-valor{
   line-height: 10px;
@@ -146,14 +147,6 @@
   font-size: 40px;
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-}
-
-.container-planos .container-cards {
-  margin-left: 6.2rem; /*100px*/
-  margin-right: 6.2rem;
-  display: flex;
-  justify-content: space-between;
-
 }
 
 .lista-inclusos {
@@ -182,7 +175,8 @@
 
 .border-garantia {
   height: 100px; width: 85%; 
-  margin-top: -50px; position: relative;
+  margin-bottom: -50px;
+  position: relative;
   background-color: #6A34CA;
   border-radius: 5px;
   display: inline-flex;
@@ -196,8 +190,7 @@
 .como-funciona,
 .conteudo-diferencial,
 .container-planos,
-.border-garantia,
-.rodape {
+.border-garantia {
   padding-left: 6.2rem;
   padding-right: 6.2rem;
 }
@@ -209,10 +202,25 @@
   .como-funciona,
   .conteudo-diferencial,
   .container-planos,
-  .border-garantia,
-  .rodape {
+  .border-garantia {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .border-garantia {
+    padding-left: auto;
+    padding-right: auto;
+    width: 90%;
+    height: 5rem;
+    margin-bottom: -2.5rem;
+  }
+
+  .border-garantia img {
+    width:12.5rem;
+    padding: 10px;
+  }
+  .border-garantia p {
+    text-align: center;
   }
 
   .apresentacao{
@@ -224,31 +232,41 @@
   }
 
   .yt-video {
-    /*width:627.2px;
-    height:352.8px;*/
     width: 80%;
     height: 35vh;
   }
-
-
 
   .conteudo-diferencial{
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .conteudo-diferencial .card-2 {
-    width: auto;
-  }
+
   .conteudo-diferencial img {
     width: 25rem;
     height: auto;
     margin-top: 3rem;
   }
 
+  .container-planos #container-cards-responsivo {
+    justify-content: center;
+  }
+
   .simular-comissao .cabecalho{
     padding: 0 5% 0 5%;
   }
+
+  .list-custom {
+    display: grid;
+  }
+  .numerada-com-imagem {
+    display: inline-flex;
+    text-align: justify;
+    align-items: center;
+  }
+  
+  
+  
 
 
 }

@@ -1,10 +1,14 @@
-function toggleResponsividade() {
 
-  var navbar = document.getElementById("navbar");
+
+var navbar = document.getElementById("navbar");
+
+function toggleResponsividade() {
+  
+
+
   if (navbar.className === "links") {
-    navbar.className += " responsive w3-animate-top";
+    navbar.className += " responsive";
   } else {
     navbar.className = "links";
   }
-
 }

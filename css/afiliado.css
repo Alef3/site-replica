@@ -3,8 +3,8 @@
 }
 .card-funcionamento {
   font-size: 20px;
-  width: 400px; 
-  height:auto;
+  width: 18rem;
+  height: 18rem;
   background-color: #FFFFFF;
   filter: drop-shadow(1px 1px 4px #d8d9da);
   margin:10px;
@@ -23,6 +23,12 @@ width: 20%;
 /*CONTEUDO DIFERENCIAL MOVIDO P/ GLOBAL.CSS*/
 
 /*LISTA PERSONALIZADA MOVIDA PARA GLOBAL.CSS*/
+.container-vantagens {
+  color:white;
+  background-color: #8F4FFB;
+}
+
+
 
 .simular-comissao {
   background-color: #344451;
@@ -54,8 +60,8 @@ width: 20%;
 
 .card-simulacao {
   background-color: #212933;
-  width: 22rem;
-  height: 15rem;
+  width: 17.6rem;
+  height: 12rem;
   font-size: 20px;
   color: white;
   text-align: center;
@@ -105,8 +111,10 @@ input {
 
 .card-plano123 {
   background-color: white;
-  width: 22rem;
-  height: 15rem;
+  /*width: 22rem;
+  height: 15rem;*/
+  width: 17.6rem;
+  height: 12rem;
   font-size: 20px;
   color: white;
   text-align: center;
@@ -169,19 +177,23 @@ input {
 .apresentacao,
 .funcionamento-container,
 .conteudo-diferencial,
-.lista-personalizada,
+.container-vantagens,
 .simular-comissao,
 .perguntas-container,
 .rodape {
   padding-left: 6.2rem;
   padding-right: 6.2rem;
 }
+
+.apresentacao {
+  padding-bottom: 50px;
+}
 @media screen and (max-width: 768px) {
   .header-container,
   .apresentacao,
   .funcionamento-container,
   .conteudo-diferencial,
-  .lista-personalizada,
+  .container-vantagens,
   .simular-comissao,
   .perguntas-container,
   .rodape {
@@ -192,6 +204,7 @@ input {
   .apresentacao{
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
   }
   .apresentacao img{
     width: 25rem;
@@ -211,6 +224,10 @@ input {
     width: 25rem;
     height: auto;
     margin-top: 3rem;
+  }
+
+  .container-vantagens #p-responsivo{
+    width: 80%;
   }
 
   .simular-comissao .cabecalho{

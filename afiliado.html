@@ -142,9 +142,9 @@
     <img src="./assets/img/modelo-img.png" alt="" style="height: inherit; padding-top: 15px;">
   </div>
 
-  <div class="lista-personalizada" style="padding:1rem 8rem 4rem 8rem;">
-    <p style="font-size: 40px; text-align: center;">Quais são as <strong>vantagens</strong> dos serviços que você venderá?</p>
-    <section class="lista">
+  <div class="container-vantagens" style="display: grid;padding-bottom: 25px;">
+    <p style="font-size: 40px; text-align: center;" id="p-responsivo">Quais são as <strong>vantagens</strong> dos serviços que você venderá?</p>
+    <section class="lista" id="l-responsiva" style="width: inherit;">
       <div>
         <p>Layout One-Page</p>
         <p>Pronto para dispositivos móveis</p>
@@ -188,7 +188,7 @@
           <p style="margin-top: -10px; position: relative;">Selecione a quantidade de vendas e veja sua comissão em cada plano</p>
           <section class="incremento" style="background-color: white; color: #334551; ">
             <!--div id="valor" value="1">1</div-->
-            <input type="text" size=3; maxlength=3 id="valor" value="1" style="border: none; display: flex;">
+            <input type="text" size=3; maxlength=3 id="valor" value="1" style="border: none; display: flex; width: inherit;">
             <input type="button" class="btn-plus" id="" value="+" onclick="calcularComissao()" />
             <!--button class="btn-incremento" onclick="calcularComissao()">+</button--->
           </section>

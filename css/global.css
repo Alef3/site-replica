@@ -10,7 +10,7 @@ html, body {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
+body  {
   margin-left: 0px; margin-right: 0px;
   display: block;
   position: relative;
@@ -86,6 +86,9 @@ body {
     padding-right: 40px;
     background-color: ghostwhite;
     padding-left: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   .header.responsive a.icon {
@@ -98,6 +101,37 @@ body {
     display: block;
     text-align: left;
     margin: 20px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lista-personalizada .lista { 
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #l-responsiva {
+    display: grid;
+    justify-content: center;
+  }
+
+  #c2-responsivo {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+  }
+
+  #cd-responsivo{
+    justify-content: center;
+  }
+  #cd-responsivo img {
+    margin: 0;
+    width: 80%;
+    /*display: none;*/
+  }
+
+  #mobile-display-none{
+    display: none;
   }
 }
 
@@ -138,19 +172,19 @@ body {
   font-size: 20px;
 }
 
-.lista-personalizada {
-  color:white;
-  background-color: #8F4FFB;
-  text-align: left;
-}
-.lista-personalizada .lista {
+
+.lista {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: left;
 }
 
+.lista div {
+  width: 20rem;
+}
 
-.lista-personalizada .lista p{
+.lista p{
   padding-left: 25px;
   font-size: 18px;
   padding-bottom: 1px;
@@ -162,20 +196,25 @@ body {
   justify-content: space-between;
   background-color: white;
   margin: 1.55rem 0 1.55rem 0;
-  vertical-align: middle;
+  align-items: center;
+  border-top: 2px solid #E7E9EB;
 }
 
 .conteudo-diferencial .card-2 {
   text-align: left;
   width: 50%;
+  color:#334551;
 }
 
 .conteudo-diferencial .card-2 .titulo {
-  font-size: 25px;
-  color:#334551;font-size: 40px;
+font-size: 40px;
 }
 
 .conteudo-diferencial .card-2 .descricao {
   /*line-height: 30px;*/
-  color:#334551;font-size: 20px;
+  font-size: 20px;
+}
+
+.conteudo-diferencial .card-2 ul {
+  font-size: 20px;
 }
