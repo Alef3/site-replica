@@ -97,7 +97,7 @@ width: 20%;
   border: none;
   cursor: pointer;
 
-  font-size: 25px;
+  font-size: 30px;
   width: fit-content;
 }
 
@@ -106,7 +106,7 @@ textarea:focus, input:focus{
 }
 
 input {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .card-plano123 {
@@ -219,6 +219,7 @@ input {
 
   .conteudo-diferencial .card-2 {
     width: auto;
+    display: grid;
   }
   .conteudo-diferencial img {
     width: 25rem;
