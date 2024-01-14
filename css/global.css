@@ -20,12 +20,13 @@ body  {
 
 /* NAVBAR */
 .header-container {
-  margin-top: 1.55rem;
+  margin-top: 0;
+  /*margin-top: 1.55rem;*/
   /*background-color: ghostwhite;*/
 }
 
 .header {
-  
+  padding: 10px;
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -33,6 +34,16 @@ body  {
 
 .links {
   margin: auto 0;
+}
+
+.links a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.links a:hover{
+  background-color: #d2d2ff;
+  
 }
 
 .links a:not(:last-child) {
@@ -66,7 +77,17 @@ body  {
 @media screen and (max-width: 768px) {
   .header{
     position: relative;
+    background-color: #c3c3ff;
   }
+
+  .header .logo {
+    padding-left: 2rem;
+  }
+
+  .header .icon {
+    padding-right: 2rem;
+  }
+  
   .links a{display: none;}
   .header a.icon {
     float: right;
@@ -82,18 +103,22 @@ body  {
 
 @media screen and (max-width: 768px) {
   .links.responsive {
+    width:-webkit-fill-available;
     position: absolute;
     z-index: 1;
-    top: 8px;
+    /*top: 8px;*/
+    top: 9.5px;
     right: 0px;
     padding-right: 40px;
-    background-color: ghostwhite;
+    /*background-color: ghostwhite;*/
+    background-color:#c3c3ff;
     padding-left: 20px;
-    -webkit-transition: all 0.5s ease;
+    /*-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
     transform: translateY(15%);
-    transition: transform 0.2s;
+    transition: transform 0.2s;*/
+    transform: translateY(15%);
   }
 
   .header.responsive a.icon {

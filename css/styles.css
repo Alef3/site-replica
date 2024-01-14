@@ -196,7 +196,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header-container,
+  /*.header-container,*/
   .apresentacao,
   .banner-video,
   .como-funciona,
@@ -206,6 +206,13 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .header-container{
+    padding-left: 0;
+    padding-right: 0;
+    position: sticky;top:0;z-index:2;
+  }
+
 
   .border-garantia {
     padding-left: auto;
