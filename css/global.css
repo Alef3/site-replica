@@ -104,6 +104,7 @@ body  {
 @media screen and (max-width: 768px) {
   .links.responsive {
     width:-webkit-fill-available;
+    width: -moz-available;
     position: absolute;
     z-index: 1;
     /*top: 8px;*/
